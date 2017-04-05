@@ -1,6 +1,6 @@
 from flask import Flask
 app = Flask(__name__)
-import enchant
+#import enchant
 import random
 
 @app.route('/user/<username>')
@@ -12,8 +12,9 @@ def show_user_profile(username):
 @app.route('/dictionary/<myword>')
 def show_user_dict(myword):
     # show the user profile for that user
-    d = enchant.request_dict("en_US")
-    my = d.suggest(myword)
+    #d = enchant.request_dict("en_US")
+    #my = d.suggest(myword)
+    my = ['hey']
      
     return 'suggestions {}'.format(my)
 
