@@ -1,3 +1,4 @@
 #pyenchant
 flask
 gunicorn
+nltk
