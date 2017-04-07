@@ -21,7 +21,7 @@ def show_user_dict(myword):
 
 @app.route("/")
 def hello():
-    import enchant
+    # import enchant
 
     my_unused_variable = """<html>
     <body>
